@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "Instant documentation for your CLI tools — turn any terminal command into beautiful, interactive docs",
   "main": "index.js",
+  "bin": {
+    "commandkit": "./cli/commandkit.js"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cli": "node ./cli/commandkit.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
